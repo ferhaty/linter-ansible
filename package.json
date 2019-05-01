@@ -1,9 +1,9 @@
 {
-  "name": "linter-ansible-linting",
+  "name": "linter-ansible",
   "main": "./lib/main.js",
-  "version": "1.4.0",
+  "version": "1.0.0",
   "description": "Ansible linting via ansible-lint",
-  "repository": "https://github.com/mschuchard/linter-ansible-linting",
+  "repository": "https://github.com/ferhaty/linter-ansible",
   "license": "MIT",
   "keywords": [
     "lint",
@@ -12,7 +12,7 @@
     "ansible-lint"
   ],
   "bugs": {
-    "url": "https://github.com/mschuchard/linter-ansible-linting/issues"
+    "url": "https://github.com/ferhaty/linter-ansible/issues"
   },
   "engines": {
     "atom": ">0.95.0"
