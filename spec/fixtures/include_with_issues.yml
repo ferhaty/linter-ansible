@@ -1,0 +1,11 @@
+# Helper for include_has_issues.yml. This should not be linted directly.
+---
+
+
+
+
+
+
+
+- name: ANSIBLE0014
+  command: HOME=/foo /bin/echo 'hello world' creates=world

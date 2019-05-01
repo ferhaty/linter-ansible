@@ -1,0 +1,34 @@
+# All ansible-lint checks represented here.
+---
+- hosts: webservers
+  #ANSIBLE0008
+  sudo_user: root
+
+  tasks:
+  - name: ANSIBLE0004
+    action: git version=HEAD c=d
+
+  - name: ANSIBLE0006 and ANSIBLE0012
+    action: command chdir=bobbins /usr/bin/git clone blah
+
+  - name: ANSIBLE0005
+    hg: repo=https://bitbucket.org/user/repo1 dest=/home/user/repo1
+
+  #ANSIBLE0011 and ANSIBLE0013
+  - shell: echo hello creates=/foo
+
+  - name: ANSIBLE0007 and ANSIBLE0018
+    command: /bin/mkdir /path/to/dir creates=/path/to/dir
+    always_run: yes
+
+  - name: ANSIBLE0009 and ANSIBLE0017
+    file: path=/path/to/file mode=123
+    become_user: me
+
+  - name: ANSIBLE0010 and ANSIBLE0015
+    yum: name=ansible state=latest
+    with_items: items
+
+  - name: ANSIBLE0014 and ANSIBLE0016
+    command: HOME=/foo /bin/echo 'hello world' creates=world
+    when: result.changed

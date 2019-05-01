@@ -1,0 +1,6 @@
+# Include has a linter issue which should trigger and display for the include.
+---
+- hosts: whatever
+
+  tasks:
+    - include: include_with_issues.yml
