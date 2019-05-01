@@ -2,7 +2,7 @@
   "name": "linter-ansible",
   "main": "./lib/main.js",
   "version": "1.0.0",
-  "description": "Ansible linting via ansible-lint",
+  "description": "Ansible provider for Linter",
   "repository": "https://github.com/ferhaty/linter-ansible",
   "license": "MIT",
   "keywords": [
