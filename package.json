@@ -1,7 +1,7 @@
 {
   "name": "linter-ansible",
   "main": "./lib/main.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Ansible provider for Linter",
   "repository": "https://ferhaty@github.com/ferhaty/linter-ansible",
   "license": "MIT",
