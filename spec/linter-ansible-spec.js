@@ -8,7 +8,7 @@ describe('The Ansible Lint provider for Linter', () => {
   beforeEach(() => {
     atom.workspace.destroyActivePaneItem();
     waitsForPromise(() => {
-      atom.packages.activatePackage('linter-ansible-linting');
+      atom.packages.activatePackage('linter-ansible');
       return atom.packages.activatePackage('language-ansible').then(() =>
         atom.workspace.open(path.join(__dirname, 'fixtures', 'clean.yml'))
       );
